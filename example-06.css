@@ -14,14 +14,23 @@
 .main-content {}
 /* hint! what do you need to add here? */
 
+.main-content:after {
+	content:"";
+	clear:both;
+	display:block;
+	visibility: hidden;
+	height:0;
+}
 .widget {
-	/* how do you make the widgets float next to each other? */
-	/* what happens when you change float left to float right? why? */
+	float:left;
 }
 
+/*.widget.tall {
+	height:500px;
+}*/
 
 .footer {
-	/* hint! */
+	clear:both;
 }
 
 

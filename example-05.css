@@ -13,20 +13,49 @@
 .header {}
 /* hint! what do you have to add here? */
 
-.logo {}
+.header:after {
+	content:"";
+	display:block;
+	clear:both;
+	visibility: hidden;
+	height: 0;
+}
 
-.navigation {}
+.logo {
+	float:left;
+}
 
-.sidebar {}
+.navigation {
+	float:right;
+}
+
+.sidebar {
+	float:left;
+	height: 300px;
+	width:200px;
+}
 
 .main-content {}
-/* hint! you have to contain the floated children elements. */
+
+.main-content:after {
+	content: "";
+	display:block;
+	visibility: hidden;
+	height:0;
+	clear:both;
+}
 
 .sub-content {
-	/* hint! */
+	float:right;
+	height: 120px;
+	width:600px;
+	margin-bottom:15px;
 }
 .sub-content-2 {
-	/* hint! */
+	float:right;
+	height: 120px;
+	width:600px;
 }
 
 .footer {}
+
